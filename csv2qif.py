@@ -17,7 +17,7 @@ def csv2qif(input_file='input.csv', output_file='output.qif'):
     qif_data = ["!Type:Bank"]
 
     with open(input_file, 'r') as csv_file:
-        rows = list(csv.reader(csv_file, delimiter=';'))
+        rows = list(csv.reader(csv_file, delimiter=','))
         print(f"Number of data rows in the csv file: {len(rows) - 1}")
         rowNr = 1
         print("")
